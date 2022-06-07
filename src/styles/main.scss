@@ -1,0 +1,64 @@
+@import "base/_general.scss";
+@import "smart-grid.scss";
+
+.wrapper {
+  @include wrapper();
+}
+
+$color-black: #101628;
+$color-green: #46A44E;
+$color-grey: #8B8B8F;
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 135%;
+  color: $color-black;
+  letter-spacing: .11px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $color-grey;
+
+  &:hover {
+    color: $color-green;
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 3px solid transparent;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 135%;
+
+  svg {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+  }
+
+  &:focus {
+    border: 3px solid #86C58B;
+  }
+  
+  &:disabled {
+    background-color: #EEEEEE;
+    color: #8B8B8F;
+  }
+}
