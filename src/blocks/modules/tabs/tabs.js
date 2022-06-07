@@ -1,7 +1,7 @@
 //tabs
-$('.tabgroup > div.tab-hidden').hide();
-$('.tabgroup > div.tab-hidden:first-of-type').show();
-$('.tabs a').click(function (e) {
+$('.js-tabgroup > div.tab-hidden').hide();
+$('.js-tabgroup > div.tab-hidden:first-of-type').show();
+$('.js-tabs a').click(function (e) {
     e.preventDefault();
     var $this = $(this),
         tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),

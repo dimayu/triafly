@@ -36,6 +36,7 @@ button {
   cursor: pointer;
 }
 
+
 .btn {
   display: flex;
   justify-content: center;
@@ -62,3 +63,9 @@ button {
     color: #8B8B8F;
   }
 }
+
+ul li {
+  text-decoration: underline;
+}
+
+@import "src/blocks/modules/modal/modal";

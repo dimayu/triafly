@@ -1,6 +1,1 @@
-(function ($) {
-    $(document).ready(function () {
-
-
-    });
-})(jQuery);
+import "./import/modules";

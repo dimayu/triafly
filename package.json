@@ -1,11 +1,11 @@
 {
-    "name": "gulp-scss-starter",
+    "name": "gulp",
     "description": "Frontend development with pleasure",
     "author": "Andrey Gorokhov",
     "license": "GPL-3.0-only",
     "repository": {
         "type": "git",
-        "url": "https://github.com/andreyalexeich/gulp-scss-starter.git"
+        "url": "https://github.com/dimayu/gulp.git"
     },
     "scripts": {
         "dev": "gulp",
@@ -66,8 +66,8 @@
         "postcss": "^8.4.8",
         "postcss-scss": "^4.0.3",
         "require-dir": "^1.2.0",
-        "smart-grid": "^2.1.2",
         "sass": "^1.49.9",
+        "smart-grid": "^2.1.2",
         "stylelint": "^14.5.3",
         "stylelint-config-standard-scss": "^3.0.0",
         "stylelint-order": "^5.0.0",
@@ -76,6 +76,7 @@
     },
     "dependencies": {
         "dev": "^0.1.3",
+        "jquery": "^3.6.0",
         "webpack": "^5.70.0",
         "webpack-stream": "^7.0.0"
     },
