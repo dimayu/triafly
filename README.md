@@ -1,4 +1,4 @@
-# gulp
+# liveHTML
 
 ## :fire: Особенности
 * именование классов по [БЭМ](https://ru.bem.info/)
