@@ -2,40 +2,185 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>gulp-scss-starter</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>gulp-scss-starter</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
 
 <main class="main">
-
+  <section class="section-tariff">
+    <div class="wrapper">
+      <h2 class="section__title">Тарифы на «Триафлай»</h2>
+      <h3 class="section__description">Платформа предоставляется на правах неисключительной лицензии (объёмы прав
+        фиксируются в лицензионном договоре)</h3>
+      <div class="section-tariff__items">
+        <div class="section-tariff__items__item">
+          <h4 class="section-tariff__items__item--title">Demo</h4>
+          <div class="section-tariff__items__item--price">
+            <p>0</p>
+            <p>руб.</p>
+            <p>Стоимость экземпляра платформы, без НДС</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Размещение</p>
+            <p>Платформа развёрнута на мощностях Вендора</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Период использования, мес.</p>
+            <p>2</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Кол-во пользователей, чел.</p>
+            <p>5</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Стоимость лицензии именного пользователя, без НДС</p>
+            <p>0 руб.</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Кол-во экземпляров платформы, шт.</p>
+            <p>1</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Территория использования</p>
+            <p>Регион юридического адреса заказчика</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Сопровождение платформы, облагается НДС</p>
+            <p>Не оказывается</p>
+          </div>
+          <button class="section-tariff__items__item--btn">Оставить заявку</button>
+        </div>
+        <div class="section-tariff__items__item">
+          <h4 class="section-tariff__items__item--title">Demo</h4>
+          <div class="section-tariff__items__item--price">
+            <p>0</p>
+            <p>руб.</p>
+            <p>Стоимость экземпляра платформы, без НДС</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Размещение</p>
+            <p>Платформа развёрнута на мощностях Вендора</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Период использования, мес.</p>
+            <p>2</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Кол-во пользователей, чел.</p>
+            <p>5</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Стоимость лицензии именного пользователя, без НДС</p>
+            <p>0 руб.</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Кол-во экземпляров платформы, шт.</p>
+            <p>1</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Территория использования</p>
+            <p>Регион юридического адреса заказчика</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Сопровождение платформы, облагается НДС</p>
+            <p>Не оказывается</p>
+          </div>
+          <button class="section-tariff__items__item--btn">Оставить заявку</button>
+        </div>
+        <div class="section-tariff__items__item">
+          <h4 class="section-tariff__items__item--title">Demo</h4>
+          <div class="section-tariff__items__item--price">
+            <p>0</p>
+            <p>руб.</p>
+            <p>Стоимость экземпляра платформы, без НДС</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Размещение</p>
+            <p>Платформа развёрнута на мощностях Вендора</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Период использования, мес.</p>
+            <p>2</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Кол-во пользователей, чел.</p>
+            <p>5</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Стоимость лицензии именного пользователя, без НДС</p>
+            <p>0 руб.</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Кол-во экземпляров платформы, шт.</p>
+            <p>1</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Территория использования</p>
+            <p>Регион юридического адреса заказчика</p>
+          </div>
+          <div class="section-tariff__items__item--description">
+            <p>Сопровождение платформы, облагается НДС</p>
+            <p>Не оказывается</p>
+          </div>
+          <button class="section-tariff__items__item--btn">Оставить заявку</button>
+        </div>
+      </div>
+      <button class="section-tariff__btn">
+        <span class="section-tariff__btn--span">Комментарии к тарифам</span>
+        <svg class="section-tariff__btn--icon" width="17" height="8" viewBox="0 0 17 8" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.32843 0L0.5 0L8.5 8L16.5 0L13.6716 0L8.5 5.17157L3.32843 0Z"/>
+        </svg>
+      </button>
+      <div class="section-tariff__comment">
+          <p>Владение Платформой подразумевает применение прав, описанных в Лицензионном и сублицензионном договорах.</p>
+          <p>Платформа может быть масштабирована, наращиванием физических серверов, программных серверов Платформы,
+          серверов управления базами данных, что будет повышать быстродействие и производительность работы инструментов
+              Платформы.</p>
+          <p>Настоящая Ценовая политика подразумевает предоставление прав на Платформу для одного Конечного пользователя,
+              если иное не оговаривается в Лицензионном и сублицензионном договоре.</p>
+          <p>Возможно заключение дополнительного соглашения об оказании дополнительных услуг, сервисов. Сроки, стоимость
+          оговаривается в дополнительном соглашении.</p>
+          <div>Годовая подписка на Стандартное гарантийное сопровождение включает:</div>
+          <ul>
+              <li>организацию 3-й линии технической поддержки;</li>
+              <li>обновление версий (не менее 2-х раз в год);</li>
+              <li>консультирование сотрудников компании Клиента по телефону или в офисе (не более 16 чел.*час в месяц). Превышение лимита оплачивается по ставке 3 750 руб./час с НДС;</li>
+              <li>обработка и управление инцидентами платформы(8X5).</li>
+          </ul>
+      </div>
+    </div>
+  </section>
 </main>
 
 

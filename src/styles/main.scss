@@ -3,34 +3,74 @@
 @import "smart-grid.scss";
 
 .wrapper {
-  @include wrapper();
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: stretch;
+  position: relative;
+  z-index: 20;
+  flex-wrap: wrap
 }
 
-$color-black: #252525;
-$color-yellow: #FFCC00;
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  color: $color-black;
-  letter-spacing: -0.02px;
-  background-color: #ffffff;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-
-  &:hover {
-    color: $color-yellow;
+@media screen and (max-width: 1919px) {
+  .wrapper {
+    max-width: 1600px
   }
 }
 
-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+@media screen and (max-width: 1699px) {
+  .wrapper {
+    max-width: 1300px
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .wrapper {
+    max-width: 1150px
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .wrapper {
+    max-width: 1024px
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    max-width: 900px
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    max-width: 700px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 10px !important
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    max-width: 100%
+  }
+}
+
+$color-grey-1: #53565A;
+$color-grey-2: #888B8D;
+$color-blue-2: #00B5E2;
+$color-blue-1: #4DCBEB;
+
+.section-tariff {
+  font-family: gilroy, sans-serif;
+  font-size: 16px;
+  color: $color-grey-1;
+  background-color: #F4F4F4;
 }
