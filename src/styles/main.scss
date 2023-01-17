@@ -2,6 +2,10 @@
 @import "base/_fonts.scss";
 @import "smart-grid.scss";
 
+body, html {
+  overflow-x: hidden;
+}
+
 .wrapper {
   max-width: 1800px;
   width: 100%;
@@ -59,7 +63,8 @@
 
 @media screen and (max-width: 767px) {
   .wrapper {
-    max-width: 100%
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -75,6 +80,11 @@ $color-blue-1: #4DCBEB;
     font-weight: 700;
     font-size: 48px;
     text-align: center;
+
+    @include sm-block() {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 
   &__description {
@@ -93,6 +103,10 @@ $color-blue-1: #4DCBEB;
   line-height: 1.24;
   background-color: #F4F4F4;
 
+  &__description-items {
+    margin-bottom: 8px;
+  }
+
   &__items {
     width: 100%;
     display: grid;
@@ -100,15 +114,23 @@ $color-blue-1: #4DCBEB;
     grid-column-gap: 20px;
     margin-top: 40px;
 
+    @include xmd-block() {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 16px;
+    }
+
+    @include sm-block() {
+      margin-top: 24px;
+    }
+
     &__item {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       background: #FFFFFF;
       border-radius: 32px;
       padding: 32px;
 
       &--title {
-        width: 100%;
         margin-bottom: 16px;
         text-align: center;
         font-weight: 700;
@@ -116,9 +138,22 @@ $color-blue-1: #4DCBEB;
       }
 
       &--price {
-        width: 100%;
+        position: relative;
         text-align: center;
         margin-bottom: 52px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 48px;
+          height: 1px;
+          background: #C8C9C7;
+          opacity: 0.6;
+          bottom: -28px;
+          left: 50%;
+          transform:translate(-50%, -50%);
+        }
 
         p {
           &:nth-child(1) {
@@ -139,8 +174,11 @@ $color-blue-1: #4DCBEB;
       }
 
       &--description {
-        width: 100%;
         margin-bottom: 20px;
+
+        @include sm-block() {
+          margin-bottom: 16px;
+        }
 
         p {
           &:nth-child(1) {
@@ -160,7 +198,7 @@ $color-blue-1: #4DCBEB;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 8px;
+        margin-top: auto;
         background-color: $color-blue-2;
         border-radius: 32px;
         color: #fff;
@@ -240,6 +278,10 @@ $color-blue-1: #4DCBEB;
         opacity: 1;
         padding: 32px;
         transition:0.9s opacity, height 0.9s ease-out;
+
+        @include sm-block() {
+          padding: 24px;
+        }
       }
 
       .section-tariff__block-comment__btn--icon {

@@ -19,7 +19,7 @@ let settings = {
             fields: '224.5px'
         },
         xmd: {
-            width: '1300px',
+            width: '1024px',
             fields: '138px'
         },
         md: {
@@ -27,7 +27,7 @@ let settings = {
             fields: '25px'
         },
         sm: {
-            width: '780px',
+            width: '768px',
             fields: '15px'
         },
         xxs: {
